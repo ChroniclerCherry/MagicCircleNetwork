@@ -1,0 +1,10 @@
+﻿{
+  "Name": "Magic Circle Network",
+  "Author": "The MCN Team",
+  "Version": "1.0.0",
+  "Description": "Coding components for the MCN project",
+  "UniqueID": "MagicCircleNetwork.Code",
+  "EntryDll": "MagicCircleNetwork.dll",
+  "MinimumApiVersion": "3.5.0",
+  "UpdateKeys": [""]
+}
