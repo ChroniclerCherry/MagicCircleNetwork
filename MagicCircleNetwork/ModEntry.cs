@@ -1,4 +1,5 @@
-﻿using StardewModdingAPI;
+﻿using MagicCircleNetwork.Utility;
+using StardewModdingAPI;
 
 namespace MagicCircleNetwork
 {
@@ -6,10 +7,13 @@ namespace MagicCircleNetwork
     {
         public override void Entry(IModHelper helper)
         {
+            //Initialization of APIs
+            APIs.Initialize(Monitor, Helper);
+            APIs.RegisterJsonAssets();
+
             //Add initialization of each part of the code here. Pass in helper and monitor
             //that should be the extent of code in this class
-
-            new Arboretum.Arboretum(helper, Monitor);
+            new Arboretum.ArboretumCrops(helper, Monitor);
         }
     }
 }
